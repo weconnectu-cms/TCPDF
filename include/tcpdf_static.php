@@ -387,7 +387,7 @@ class TCPDF_STATIC {
 				$rnd .= uniqid('', true);
 			}
 		}
-		return $rnd.$seed.__FILE__.serialize($_SERVER).microtime(true);
+		return $rnd.$seed.__FILE__.microtime(true);
 	}
 
 	/**
